@@ -7,10 +7,10 @@ void	ft_sort_int_tab(int *tab, int size)
 	i = 0;
 	while (i < (size - 1))
 	{
-		j = i + 1;
-		while (j < size)
+		j = 0;
+		while (j < size - i - 1)
 		{
-			if (tab[j] < tab[i])
+			if (tab[j] > tab[i])
 			{
 				tmp = tab[j];
 				tab[j] = tab[i];
